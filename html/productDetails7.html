@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/styleproductdetails.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center ">
+            <a class="navbar-brand" href="../home.html" style="max-width: 500px; width: 400px;">
+                <span class="fw-bold">REFRIGERATOR STORE</span>
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-category dropdown-toggle" type="button"
+                    id="dropdownMenuButton">
+                    <i class="fa-solid fa-bars"></i> Danh mục
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="../html/home.html">Trang chủ</a></li>
+                    <li><a class="dropdown-item" href="../html/cart.html">Giỏ hàng</a></li>
+                    <li><a class="dropdown-item" href="#">Khiếu nại</a></li>
+                    <li><a class="dropdown-item" href="#">Thông tin</a></li>
+                </ul>
+            </div>
+
+            <form class="d-flex flex-grow-1 mx-3">
+                <input class="form-control rounded-pill input-focus" style="max-width: 30em;" type="search"
+                    placeholder="Bạn tìm gì..." aria-label="Search">
+            </form>
+
+            <div class="d-flex align-items-center">
+                <a href="#" class="btn-custom text-white text-decoration-none me-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    <i class="fa-solid fa-user"></i> Đăng nhập
+                </a>
+                <a href="#" class="btn-custom text-white text-decoration-none me-3" style="position: relative;">
+                    <span class="product-quantity"></span>
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Giỏ hàng
+                </a>
+                <button class="btn-custom btn btn-light rounded-pill">
+                    <i class="fa-solid fa-location-dot"></i> Hồ Chí Minh
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb mt-3">
+                <li class="breadcrumb-item"><a href="../html/home.html" style="text-decoration: none; color: rgb(108, 117, 125);">Trang
+                        chủ</a></li>
+                <li class="breadcrumb-item active text-dark" aria-current="page">Tủ lạnh Samsung</li>
+            </ol>
+        </nav>
+        <div class="product-name">
+            <h1 class="fs-3">Tủ lạnh Samsung Inverter 460 lít Bespoke RT47CB66868ASV</h1>
+            <div class="box-rate">
+                <span class="quantity-sale"> Đã bán 1,5k</span>
+                <div class="box-rate-left">
+                    <div class="detail-rate">
+                        <p>
+                            <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                            4.9
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-main">
+            <div class="box-left">
+                <div class="item-img">
+                    <aside id="spinner-details" class="show" style="width: 100%; height: 100%;">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="2000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img id = "productImg" src="../img/pd71.jpg" class="d-block mx-auto w-75"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/pd72.jpg" class="d-block mx-auto w-75"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/pd73.jpg" class="d-block mx-auto w-75"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </aside>
+                </div>
+                <div class="policy">
+                    <h3>Refrigeato store cam kết</h3>
+                    <ul class="policy-list">
+                        <li>
+                            <div class="pl-icon">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                            <div class="pl-txt">
+                                <p>
+                                    Nếu dùng cho hoạt động kinh doanh (nhà máy, khách sạn, giặt ủi,...) thì không được
+                                    bảo hành.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pl-icon">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div class="pl-txt">
+                                <p>
+                                    Bảo hành máy nén 12 năm
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pl-icon">
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="pl-txt">
+                                <p>
+                                    Hư gì đổi nấy <b>12 tháng</b> tận nhà (miễn phí tháng đầu) <a href="#">Xem chi
+                                        tiết</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pl-icon">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <div class="pl-txt">
+                                <p>
+                                    Bảo hành <b>chính hãng 2 năm</b>, có người đến tận nhà
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pl-icon">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+                            <div class="pl-txt">
+                                <p>
+                                    Thùng tủ lạnh có: Sách hướng dẫn
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pl-icon">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div class="pl-txt">
+                                <p>
+                                    <b>Lắp đặt miễn phí</b> lúc giao hàng
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="spectification-img">
+                    <img src="../img/pd64.jpg" alt="" srcset="">
+                </div>
+
+                <div class="specification">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Tổng quan -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Tổng quan
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th>Kiểu tủ:</th>
+                                                <td>Ngăn đá trên - 2 cánh</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dung tích sử dụng:</th>
+                                                <td>460 lít - 4 - 5 người</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dung tích tổng:</th>
+                                                <td>474 lít</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dung tích ngăn đá:</th>
+                                                <td>104 lít</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dung tích ngăn lạnh:</th>
+                                                <td>356 lít</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Chất liệu cửa tủ lạnh:</th>
+                                                <td>Kính Bespoke</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mức tiêu thụ điện năng -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Mức tiêu thụ điện năng
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th>Công suất tiêu thụ công bố theo TCVN:</th>
+                                                <td>420 kWh/năm</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Công nghệ tiết kiệm điện:</th>
+                                                <td>Công nghệ SmartThings AI Energy</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Công nghệ bảo quản và làm lạnh -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Công nghệ bảo quản và làm lạnh
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th>Công nghệ làm lạnh:</th>
+                                                <td>Công nghệ All-around Cooling giúp kiểm soát chặt chẽ sự thay đổi nhiệt độ</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Công nghệ bảo quản thực phẩm:</th>
+                                                <td>Ngăn đông mềm linh hoạt 4 chế độ Optimal Fresh+</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Công nghệ kháng khuẩn, khử mùi:</th>
+                                                <td>Hệ thống lọc Active Fresh Filter khử mùi, diệt khuẩn 99.99%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tiện ích -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Tiện ích
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th>Tiện ích:</th>
+                                                <td>Hộp đá xoay, hệ thống làm đá tự động Auto Ice Maker, chuông báo khi quên đóng cửa, làm lạnh nhanh</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thông tin lắp đặt -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Thông tin lắp đặt
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                                <div class="accordion-body">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th>Kích thước - Khối lượng:</th>
+                                                <td>Cao 182.5 cm - Ngang 70 cm - Sâu 71.7 cm - Nặng 72.5 kg</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Hãng:</th>
+                                                <td>Samsung. <a href="#">Xem thông tin hãng</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rating">
+                    <h3>Đánh giá Tủ lạnh Panasonic Inverter 417 lít NR-BX471GPKV</h3>
+
+                    <div class="rating-detail border-bottom my-2">
+                        <div class="rate" style="display: flex;justify-content: flex-start; gap: 2em;">
+                            <h6 class="pt-1">Trung</h6>
+                            <p class="rating-star">
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <span class="rating-date"> | 01/03/2025</span>
+                            </p>
+                        </div>
+                        <p class="rating-content">Nên lựa chọn sử dụng</p>
+                    </div>
+
+                    <div class="rating-detail border-bottom my-2">
+                        <div class="rate" style="display: flex;  justify-content: flex-start; gap: 2em;">
+                            <h6 class="pt-1">Như Huệ</h6>
+                            <p class="rating-star">
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>
+                                <span class="rating-date"> | 12/02/2025</span>
+                            </p>
+                        </div>
+                        <p class="rating-content">ngăn đông mềm ít sử dụng, còn lại rất hài lòng</p>
+
+                    </div>
+                    <div class="group-btn-rating">
+                        <button class="btn btn-outline-dark me-3">Xem thêm đánh giá</button>
+                        <button class="btn btn-danger">Viết đánh giá</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="promotion"
+                    style="height: 100%;background-color: #f75b00; border-radius: 10px; padding: 5px;">
+                    <div class="bs-title">
+                        <div>
+                            <p class="mb-1">
+                                <span class="fw-bold"><i class="fa-solid fa-fire"></i> Online Giá Rẻ
+                                    Quá</span>
+                            </p>
+                            <p class="sale-price">17.940.000₫</p>
+                            <p class="old-price">19.190.000₫ (-6%)</p>
+                        </div>
+                        <div class="text-end">
+                            <p class="mb-1">Kết thúc vào</p>
+                            <p class="mb-1">23:59 | 30/04</p>
+                            <div class="progress bg-light">
+                                <div class="progress-bar bg-warning" style="width: 100%;"></div>
+                            </div>
+                            <p class="mt-1">Còn <span class="text-white">30/30suất</span></p>
+                        </div>
+                    </div>
+                    <div class="box-sale"
+                        style="margin: 10px; background-color: #fff; border-radius: 10px; padding: 5px;">
+                        <h4 class="fs-5">Khuyến mãi</h4>
+                        <div class="box-sale-content">
+                            <ol>
+                                <li>Tặng phiếu mua hàng 100.000đ</li>
+                                <li>Miễn phí vận chuyển</li>
+                                <li>Miễn phí công lắp đặt</li>
+                                <li>Nhập mã VNPAYTGDD2 giảm từ 80,000đ đến 150,000đ  (áp dụng tùy giá trị đơn hàng) khi thanh toán qua VNPAY-QR<a href="#">(Xem chi tiết tại đây)</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="box-price border-top"
+                        style="margin-top: 20px; margin: 10px; background-color: #fff; border-radius: 10px; padding: 5px;">
+                        <p class=" my-1"><b>+35.880 </b> điểm tích lũy vào tài khoản</p>
+                        <div class="box-price-content">
+                            <div class="group-btn-purcharse">
+                                <button type="button" class="btn btn-outline-danger"><i
+                                        class="fa-solid fa-cart-shopping"></i> <br>Thêm vào giỏ
+                                    hàng</button>
+                                <button type="button" class="btn btn-warning" style="color: #fff;">Mua
+                                    ngay</button>
+                            </div>
+                            <div class="group-btn-purcharse">
+                                <button class="btn btn-danger" type="button">Mua trả góp 0% <br>
+                                    <span>Duyệt hồ sơ
+                                        trong vòng 5 phút</span></button>
+                                <button class="btn btn-danger" type="button">Mua trả góp qua thẻ 0% <br>
+                                    <span>Visa,
+                                        JCB, Amex</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-description">
+            <h3 class="fs-5">Mô tả sản phẩm</h3>
+            <p class="mb-2">Tủ lạnh Samsung Inverter 460 lít Bespoke RT47CB66868ASV có thiết kế hiện đại, sang trọng với
+                mặt kính Bespoke độc quyền của Samsung. Tủ lạnh được trang bị công nghệ làm lạnh All-around Cooling giúp
+                kiểm soát nhiệt độ đồng đều trong tủ, giữ thực phẩm luôn tươi ngon. Ngăn đông mềm Optimal Fresh+ giúp bảo
+                quản thực phẩm lâu hơn mà không cần rã đông. Tủ lạnh còn được trang bị hệ thống lọc Active Fresh Filter
+                giúp khử mùi và diệt khuẩn hiệu quả.</p>    
+        </div>
+        <div class="related">
+            <h3>Sản phẩm liên quan</h3>
+            <div class="products">
+                <div class="card text-start me-3 ms-1" style="width: 20em;">
+                    <img class="card-img-top" src="../img/tl1.jpg"
+                        style="width: 150px; margin-left: 5em; margin-top: 1em;" />
+                    <div class="card-body">
+                            <h4 class="card-title"><a href="../html/productDetails2.html">Sumsung inverter 280 lít RT22M4032BU/SV</a></h4>
+                            <p class="mb-2 fw-bold text-danger fs-5">7.070.000đ</p>
+                        <p class="mb-2 text-de text-danger"><span
+                                class="text-decoration-line-through text-dark ">8.990.000đ</span>-21%</p>
+                        <p class="mb-2"> <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>4.9 <span
+                                style="font-size: 0.8em;">Đã bán 2.5k</span></p>
+                    </div>
+                </div>
+                <div class="card text-start me-3" style="width: 20em;">
+                    <img class="card-img-top" src="../img/img2.jpg"
+                        style="width: 150px; margin-left: 5em; margin-top: 1em;" />
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="../html/productDetails3.html">Tủ lạnh Aqua Inverter 646 lít Side By Side AQR-S682XA(SLB)</a></h4>
+                        <p class="mb-2 fw-bold text-danger fs-5">16.040.000đ</p>
+                        <p class="mb-2 text-de text-danger"><span
+                                class="text-decoration-line-through text-dark ">17.990.000đ</span>-10%</p>
+                        <p class="mb-2"> <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>4.9 <span
+                                style="font-size: 0.8em;">Đã bán 772k</span></p>
+                    </div>
+                </div>
+                <div class="card text-start me-3" style="width: 20em;">
+                    <img class="card-img-top" src="../img/img3.jpg"
+                        style="width: 150px; margin-left: 5em; margin-top: 1em;" />
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="../html/productDetails4.html">Tủ lạnh Samsung Inverter 488 lít Multi Door RF48A4000B4/SV</a></h4>
+                        <p class="mb-2 fw-bold text-danger fs-5">18.440.000đ</p>
+                        <p class="mb-2 text-de text-danger"><span
+                                class="text-decoration-line-through text-dark ">28.990.000đ</span>-36%</p>
+                        <p class="mb-2"> <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>4.9 <span
+                                style="font-size: 0.8em;">Đã bán 203k</span></p>
+                    </div>
+                </div>
+                <div class="card text-start me-1" style="width: 20em;">
+                    <img class="card-img-top" src="../img/img4.jpg"
+                        style="width: 150px; margin-left: 5em; margin-top: 1em;" />
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="../html/productDetails1.html">Tủ lạnh Aqua Inverter 189 lít AQR-T220FA(FB)</a></h4>
+                        <p class="mb-2 fw-bold text-danger fs-5">5.170.000đ</p>
+                        <p class="mb-2 text-de text-danger"><span
+                                class="text-decoration-line-through text-dark ">5.490.000đ</span>-5%</p>
+                        <p class="mb-2"> <i class="fa-solid fa-star" style="color: rgb(248, 248, 2);"></i>4.9 <span
+                                style="font-size: 0.8em;">Đã bán 52.5k</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid" style="background-color: #fff; margin: 10px;border-radius: 10px; ">
+        <div class="container">
+            <footer style="padding: 4em 4em 0 4em;">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Tổng đài</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Gọi mua: <span class="text-danger fw-bold">1900 0091</span></li>
+                            <li class="nav-item mb-2">Bảo hành: <span class="text-danger fw-bold">1900 0091</span>
+                            <li class="nav-item mb-2">Khiếu nại: <span class="text-danger fw-bold">1900 0091</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Về công ty</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Giới thiệu</li>
+                            <li class="nav-item mb-2">Tuyển dụng</li>
+                            <li class="nav-item mb-2">Góp ý</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Thông tin khác</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Bài tập hệ thống công nghệ web</a></li>
+                            <li class="nav-item mb-2">Lớp DHKTPM19A</li>
+                            <li class="nav-item mb-2">Nguyễn Phước Thịnh 23642651</li>
+                            <li class="nav-item mb-2">Trầm Hồng Viên Thiệu 23658881</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Đăng ký nhận các khuyến mãi của chúng tôi</h5>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input style="max-width: 500px; width: 20em;" id="newsletter1" type="email"
+                                    class="form-control" placeholder="Địa chỉ email">
+                                <button class="btn btn-danger" type="button">Đăng kí</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2025 FIT, IUH</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-danger w-100 text-center" id="loginModalLabel">Đăng nhập</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" onsubmit="return validateLogin()">
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light ">
+                                    <i class="fa-solid fa-user text-danger"></i>
+                                </span>
+                                <input type="tel" class="form-control rounded-pill ps-3 custom-input input-focus"
+                                    id="phone-login" placeholder="Số điện thoại" required>
+                            </div>
+                            <span class="valid valid-phone-login"></span>
+
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light">
+                                    <i class="fa-solid fa-lock text-danger"></i>
+                                </span>
+                                <input type="password" class="form-control border-end-0 ps-3 custom-input input-focus"
+                                    id="password-login" placeholder="Nhập mật khẩu" required>
+                                <span class="input-group-text bg-light rounded-end-pill toggle-password custom-eye  " style="cursor: pointer;">
+                                    <i class="fa-solid fa-eye-slash text-danger"></i>
+                                </span>
+                            </div>
+                            <span class="valid valid-pass-login"></span>
+                        </div>
+                        
+                        <button type="submit" id="login-btn" class="btn btn-danger w-100 rounded-pill">
+                            <i class="fa-solid fa-user me-2"></i> Đăng nhập
+                        </button>
+                    </form>
+                    <!-- Phần "Hoặc tiếp tục với" -->
+                    <div class="text-center mt-3">
+                        <p class="text-muted">Hoặc tiếp tục với</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#"
+                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p>Chưa có tài khoản? <a href="../html/register.html" class="text-danger">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+
+    <script src="../js/productDetails.js"></script>
+</body>
+
+</html>

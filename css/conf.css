@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(242, 244, 247);
+}
+
+
+.btn-category {
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.btn-category:hover,
+.btn-custom:hover {
+    background-color: #cf0d20;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.product-quantity{
+    position: absolute;
+    left: 10px;
+    color: black;
+    background: #ffffff;
+    padding: 0px 6px;
+    font-size: 0.6em;
+    border-radius: 50%;
+}
+
+.custom-eye {
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+}
+
+
+.valid {
+    color: #ff0000;
+    font-size: 0.8em;
+    height: 0.2em;
+    margin-left: 1em;
+}
+
+
+.custom-input {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    padding-left: 12px;
+}
+
+.input-focus:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.rounded-start-pill{
+    border-top-left-radius: 50em !important;
+    border-bottom-left-radius: 50em !important;
+}
+
+
+.bg-custom {
+    background-image: linear-gradient(to bottom,#ff0000,#ff3636,#f04e4e  );
+}
