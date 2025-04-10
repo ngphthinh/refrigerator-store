@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/conf.css">
+
+    <link rel="stylesheet" href="../css/cart.css">
+  
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom sticky-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center ">
+            <a class="navbar-brand" href="../home.html" style="max-width: 500px; width: 400px;">
+                <span class="fw-bold">REFRIGERATOR STORE</span>
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-category dropdown-toggle" type="button" id="dropdownMenuButton">
+                    <i class="fa-solid fa-bars"></i> Danh mục
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="../html/home.html">Trang chủ</a></li>
+                    <li><a class="dropdown-item" href="../html/cart.html">Giỏ hàng</a></li>
+                    <li><a class="dropdown-item" href="#">Khiếu nại</a></li>
+                    <li><a class="dropdown-item" href="#">Thông tin</a></li>
+                </ul>
+            </div>
+
+            <form class="d-flex flex-grow-1 mx-3">
+                <input class="form-control rounded-pill input-focus" style="max-width: 30em;" type="search"
+                    placeholder="Bạn tìm gì..." aria-label="Search">
+            </form>
+
+            <div class="d-flex align-items-center">
+                <a href="#" class="btn-custom text-white text-decoration-none me-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    <i class="fa-solid fa-user"></i> Đăng nhập
+                </a>
+                <a href="../html/cart.html" class="btn-custom text-white text-decoration-none me-3"
+                    style="position: relative;">
+                    <span class="product-quantity"></span>
+                    <i class="fa-solid fa-cart-shopping me-2"></i> Giỏ hàng
+                </a>
+                <button class="btn-custom btn btn-light rounded-pill">
+                    <i class="fa-solid fa-location-dot"></i> Hồ Chí Minh
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-between">
+        <div class="products">
+        </div>
+        <div class="order-details">
+            <h4 class="text-center fs-3 fw-bold my-5">Thông tin đơn hàng</h4>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                <p class="fw-bold">Tổng tiền:</p>
+                <p id="total-price" class="text-danger fw-bold">1.000.000đ</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                <p class="fw-bold">Phí vận chuyển:</p>
+                <p class="text-danger fw-bold">0đ</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                <p class="fw-bold">Tổng cộng:</p>
+                <p id="total-price-end" class="text-danger fw-bold">1.000.000đ</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center my-5">
+                <button class="btn btn-danger rounded-pill w-100" type="button">Thanh toán tất cả</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #fff; margin: 10px;border-radius: 10px; ">
+        <div class="container">
+            <footer style="padding: 4em 4em 0 4em;">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Tổng đài</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Gọi mua: <span class="text-danger fw-bold">1900 0091</span></li>
+                            <li class="nav-item mb-2">Bảo hành: <span class="text-danger fw-bold">1900 0091</span>
+                            <li class="nav-item mb-2">Khiếu nại: <span class="text-danger fw-bold">1900 0091</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Về công ty</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Giới thiệu</li>
+                            <li class="nav-item mb-2">Tuyển dụng</li>
+                            <li class="nav-item mb-2">Góp ý</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5>Thông tin khác</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Bài tập hệ thống công nghệ web</a></li>
+                            <li class="nav-item mb-2">Lớp DHKTPM19A</li>
+                            <li class="nav-item mb-2">Nguyễn Phước Thịnh 23642651</li>
+                            <li class="nav-item mb-2">Trầm Hồng Viên Thiệu 23658881</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5>Đăng ký nhận các khuyến mãi của chúng tôi</h5>
+                            <div class="d-flex flex-column flex-sm-row w-75 mx-auto gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input style="max-width: 500px; width: 20em;" id="newsletter1" type="email"
+                                    class="form-control input-focus" placeholder="Địa chỉ email">
+                                <button class="btn btn-danger w-50" type="button">Đăng kí</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>&copy; 2025 FIT, IUH</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-danger w-100 text-center" id="loginModalLabel">Đăng nhập</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" onsubmit="return validateLogin()">
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light ">
+                                    <i class="fa-solid fa-user text-danger"></i>
+                                </span>
+                                <input type="tel" class="form-control rounded-pill ps-3 custom-input input-focus"
+                                    id="phone-login" placeholder="Số điện thoại" required>
+                            </div>
+                            <span class="valid valid-phone-login"></span>
+
+                        </div>
+                        <div class="mb-3 position-relative">
+                            <div class="input-group">
+                                <span class="input-group-text rounded-start-pill bg-light">
+                                    <i class="fa-solid fa-lock text-danger"></i>
+                                </span>
+                                <input type="password" class="form-control border-end-0 ps-3 custom-input input-focus"
+                                    id="password-login" placeholder="Nhập mật khẩu" required>
+                                <span class="input-group-text bg-light rounded-end-pill toggle-password custom-eye  "
+                                    style="cursor: pointer;">
+                                    <i class="fa-solid fa-eye-slash text-danger"></i>
+                                </span>
+                            </div>
+                            <span class="valid valid-pass-login"></span>
+                        </div>
+
+                        <button type="submit" id="login-btn" class="btn btn-danger w-100 rounded-pill">
+                            <i class="fa-solid fa-user me-2"></i> Đăng nhập
+                        </button>
+                    </form>
+                    <!-- Phần "Hoặc tiếp tục với" -->
+                    <div class="text-center mt-3">
+                        <p class="text-muted">Hoặc tiếp tục với</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#"
+                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-danger rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                            <a href="#"
+                                class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                                <i class="fa-brands fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <p>Chưa có tài khoản? <a href="../html/register.html" class="text-danger">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+
+    <script src="../js/cart.js"></script>
+   
+</body>
+
+</html>

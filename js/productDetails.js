@@ -12,9 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
 function setQuantityCarts() {
   const carts = JSON.parse(localStorage.getItem("carts")) || [];
   const cartCount = document.querySelector(".product-quantity");
+
+  // when there are no carts, hide the cart count
+  if (carts.length === 0) {
+    cartCount.style.display = "none";
+    return;
+  }
+  // show the cart count
+  cartCount.style.display = "block";
   cartCount.innerText = carts.length;
 }
-
 /**
  * Function to add product details to cart stored in localstorage
  */
@@ -41,6 +48,8 @@ function addToCart() {
       carts.push(product);
       localStorage.setItem("carts", JSON.stringify(carts));
 
+      // Update the cart count in the header
+      setQuantityCarts();
       alert("Thêm vào giỏ hàng thành công!");
     });
 }
