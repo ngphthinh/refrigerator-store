@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/conf.css">
 
     <style>
-    
         .carousel-inner img {
             margin: auto;
             max-width: 80%;
@@ -50,7 +49,6 @@
             margin: 0;
         }
 
-      
 
         .products {
             margin-top: 20px;
@@ -246,6 +244,27 @@
             color: #fff;
             transform: scale(1.05);
         }
+
+
+        /* Service*/
+
+        .service {
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .service-sub{
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            width: 25%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            height: 20em;
+        }
+        
+        /*End*/
     </style>
 </head>
 
@@ -256,8 +275,7 @@
                 <span class="fw-bold">REFRIGERATOR STORE</span>
             </a>
             <div class="dropdown">
-                <button class="btn btn-category dropdown-toggle" type="button"
-                    id="dropdownMenuButton">
+                <button class="btn btn-category dropdown-toggle" type="button" id="dropdownMenuButton">
                     <i class="fa-solid fa-bars"></i> Danh mục
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -278,7 +296,8 @@
                     data-bs-target="#loginModal">
                     <i class="fa-solid fa-user"></i> Đăng nhập
                 </a>
-                <a href="../html/cart.html" class="btn-custom text-white text-decoration-none me-3" style="position: relative;">
+                <a href="../html/cart.html" class="btn-custom text-white text-decoration-none me-3"
+                    style="position: relative;">
                     <span class="product-quantity"></span>
                     <i class="fa-solid fa-cart-shopping me-2"></i> Giỏ hàng
                 </a>
@@ -316,6 +335,34 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+            </div>
+        </div>
+
+        <div class="service">
+            <h3>Chào mừng đến với REFRIGERATOR STORE</h3>
+            <div class="d-flex justify-content-between align-items-center gap-3">
+                <div class="service-sub">
+                    <i class="fa-solid fa-truck-fast text-success text-center w-100 fs-1 mt-5"></i>
+                    <h5 class="text-center my-3 fs-3">Miễn phí vận chuyển</h5>
+                    <p>Chúng tôi cung cấp dịch vụ vận chuyển miễn phí cho đơn hàng từ 500.000 VNĐ trở lên, áp dụng toàn quốc. Giúp bạn tiết kiệm chi phí và nhận hàng nhanh chóng mà không lo phí vận chuyển.</p>
+
+                </div>
+                <div class="service-sub">
+                    <i class="fa-solid fa-headset text-warning text-center w-100 fs-1 mt-5"></i>
+                    <h5 class="text-center my-3 fs-3">Tư vấn 24/7</h5>
+                    <p>Chúng tôi hỗ trợ bạn 24/7. Mọi thắc mắc về sản phẩm hoặc dịch vụ, hãy liên hệ với chúng tôi qua hotline hoặc chat trực tuyến ngay hôm nay!</p>
+
+                </div>
+                <div class="service-sub">
+                    <i class="fa-solid fa-medal text-primary text-center w-100 fs-1 mt-5"></i>
+                    <h5 class="text-center my-3 fs-3">Sản phẩm chất lượng</h5>
+                    <p>Chúng tôi cam kết cung cấp sản phẩm chính hãng, chất lượng cao, được kiểm tra kỹ lưỡng và bảo hành dài hạn, giúp bạn yên tâm sử dụng và nhận được giá trị tốt nhất.</p>
+ </div>
+                <div class="service-sub">
+                    <i class="fa-solid fa-medal text-danger text-center w-100 fs-1 mt-5"></i>
+                    <h5 class="text-center my-3 fs-3">Ưu đãi khuyến mãi</h5>
+                    <p>Chúng tôi thường xuyên có các chương trình giảm giá và tặng quà hấp dẫn. Hãy theo dõi để không bỏ lỡ cơ hội mua sắm với giá tốt nhất!</p>
+                     </div>
             </div>
         </div>
 
@@ -723,13 +770,14 @@
                                 </span>
                                 <input type="password" class="form-control border-end-0 ps-3 custom-input input-focus"
                                     id="password-login" placeholder="Nhập mật khẩu" required>
-                                <span class="input-group-text bg-light rounded-end-pill toggle-password custom-eye  " style="cursor: pointer;">
+                                <span class="input-group-text bg-light rounded-end-pill toggle-password custom-eye  "
+                                    style="cursor: pointer;">
                                     <i class="fa-solid fa-eye-slash text-danger"></i>
                                 </span>
                             </div>
                             <span class="valid valid-pass-login"></span>
                         </div>
-                        
+
                         <button type="submit" id="login-btn" class="btn btn-danger w-100 rounded-pill">
                             <i class="fa-solid fa-user me-2"></i> Đăng nhập
                         </button>
