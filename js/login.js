@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   setupLoginEventHandlers();
+setUpChatbot();
+
 });
 
 function setupLoginEventHandlers() {
@@ -82,4 +84,20 @@ function setupLoginEventHandlers() {
     valid.innerHTML = "";
     return true;
   }
+}
+
+function setUpChatbot() {
+  const chatButton = document.getElementById("chatbot-button");
+  const chatBox = document.getElementById("chatbot-box");
+  const btnClose = document.getElementById("close-chat");
+
+  chatButton.addEventListener("click", () => {
+    chatBox.style.display = (chatBox.style.display === "none" || chatBox.style.display === "") ? "block" : "none";
+  });
+
+  btnClose.addEventListener("click",function(){
+    chatBox.style.display = "none";
+    chatButton.style.display = "block";
+  })
+
 }

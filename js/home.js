@@ -3,45 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   displayAllProduct();
   setQuantityCarts();
   handleSortProduct();
-  setupPromotionGuideTabs();
 });
-
-function setupPromotionGuideTabs() {
-  const promotionSection = document.querySelector(".promotion");
-  const guideSection = document.querySelector(".guide");
-  const promotionBtn = document.querySelector("#pills-tab li:nth-child(1) a");
-  const guideBtn = document.querySelector("#pills-tab li:nth-child(2) a");
-
-  // Mặc định ban đầu: hiển thị promotion, ẩn guide
-  guideSection.style.display = "none";
-  promotionSection.style.display = "flex";
-
-  // Xử lý sự kiện khi nhấn vào nút "Khuyến mãi"
-  promotionBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    // Thêm/xoá class active cho các nút
-    promotionBtn.classList.add("active");
-    guideBtn.classList.remove("active");
-
-    // Hiển thị/ẩn các phần tương ứng
-    promotionSection.style.display = "flex";
-    guideSection.style.display = "none";
-  });
-
-  // Xử lý sự kiện khi nhấn vào nút "Hướng dẫn"
-  guideBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    // Thêm/xoá class active cho các nút
-    promotionBtn.classList.remove("active");
-    guideBtn.classList.add("active");
-
-    // Hiển thị/ẩn các phần tương ứng
-    promotionSection.style.display = "none";
-    guideSection.style.display = "flex";
-  });
-}
 
 function handleSortProduct() {
   const sortButton = document.getElementById("sort");
